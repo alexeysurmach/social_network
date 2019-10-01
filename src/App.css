@@ -7,9 +7,11 @@
 
     grid-template-rows: 60px 1 f;
     grid-auto-columns: 2 f 10fr;
-    /*grid-gap: 10px;*/
+    grid-gap: 10px;
 }
 
-
-
+.app-wrapper-content {
+    grid-area: c;
+    background-color:dodgerblue;
+}
 

@@ -3,7 +3,7 @@ import s from './Profile.module.css';
 import MyPosts from "./Myposts/MyPosts";
 const Profile = () => {
     return (
-        <div className={s.content}>;
+        <div>
             <div>
                 <a> <img src='https://cdn.sandals.com/beaches/v12/images/general/destinations/home/beach.jpg'/> </a>
             </div>
