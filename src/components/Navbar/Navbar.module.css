@@ -6,3 +6,6 @@
 .item a {
     color: white;
 }
+.item a.actviveLink {
+    color: gold;
+}
