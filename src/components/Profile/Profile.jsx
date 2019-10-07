@@ -1,15 +1,12 @@
 import React from 'react';
 import s from './Profile.module.css';
 import MyPosts from "./Myposts/MyPosts";
+import ProfileInfo from "../Profileinfo/ProfileInfo";
+
 const Profile = () => {
     return (
         <div>
-            <div>
-                <a> <img src='https://cdn.sandals.com/beaches/v12/images/general/destinations/home/beach.jpg'/> </a>
-            </div>
-            <div>
-                ava + description
-            </div>
+            <ProfileInfo/>
             <MyPosts/>
         </div>
 
