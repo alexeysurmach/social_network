@@ -7,7 +7,7 @@ const MyPosts = () => {
         {id: 1, message: 'Hey', countLikes: 7},
         {id: 2, message: 'Cowabanga', countLikes: 21}
     ];
-    let postElements = posts.map( p => <Post message={p.message} countLikes={p.countLikes}/>)
+    let postElements = posts.map(p => <Post message={p.message} countLikes={p.countLikes}/>)
     return (
         <div className={s.postBlock}>
             <h3> My posts </h3>
