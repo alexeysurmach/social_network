@@ -10,7 +10,7 @@ import News from "./components/News/News";
 
 
 
-const App = (props) => {
+const App = (props) => { debugger
     return (
             <div className='app-wrapper'>
                 <Header/>

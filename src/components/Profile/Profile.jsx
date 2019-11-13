@@ -4,11 +4,11 @@ import MyPosts from "./Myposts/MyPosts";
 import ProfileInfo from "../Profileinfo/ProfileInfo";
 import {addPost} from "../../redux/state";
 
-const Profile = (props) => {
+const Profile = (props) => { debugger
     return (
         <div>
             <ProfileInfo/>
-            <MyPosts posts ={props.state.posts} addPosts = {props.addPost} />
+            <MyPosts posts ={props.state.posts} addPost = {props.addPost} />
         </div>
 
     )

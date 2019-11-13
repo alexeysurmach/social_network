@@ -3,7 +3,7 @@ import s from './Dialogs.module.css';
 import DilogItem from "./DilogItem/DialogItem";
 import Message from "./Message/Message";
 
-const Dialogs = (props) => { debugger
+const Dialogs = (props) => {
 
     const dialogsElements = props.state.dialogs.map(d => <DilogItem name={d.name} id={d.id}/>);
     const messagesElements = props.state.messages.map(m => <Message message={m.message}/>);
