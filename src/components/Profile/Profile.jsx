@@ -1,8 +1,7 @@
 import React from 'react';
-import s from './Profile.module.css';
 import MyPosts from "./Myposts/MyPosts";
 import ProfileInfo from "../Profileinfo/ProfileInfo";
-import {addPost} from "../../redux/state";
+
 
 const Profile = (props) => { debugger
     return (

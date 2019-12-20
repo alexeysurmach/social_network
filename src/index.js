@@ -6,11 +6,11 @@ import * as serviceWorker from './serviceWorker';
 import state from "./redux/state";
 import {addPost} from "./redux/state";
 import {BrowserRouter} from "react-router-dom";
-
+import {addMessage} from "./redux/state";
 
 ReactDOM.render(
     <BrowserRouter>
-        <App state = {state} addPost= {addPost} />
+        <App state = {state} addPost= {addPost} addMessage ={addMessage} />
     </BrowserRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

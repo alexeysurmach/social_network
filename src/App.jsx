@@ -15,10 +15,9 @@ const App = (props) => { debugger
             <div className='app-wrapper'>
                 <Header/>
                 <Navbar/>
-                <News/>
                 <div className='app-wrapper-content'>
-                    <Route path='/dialogs' render = { () => <Dialogs state = {props.state.dialogPage} />} />
-                    <Route path ='/profile' render = { () => <Profile state =  {props.state.profilePage} addPost = {props.addPost}/>} />
+                    <Route path='/dialogs' render = { () => <Dialogs state = {props.state.dialogPage}  addMessage ={props.addMessage}/>} />
+                    <Route path ='/profile' render = { () => <Profile state = {props.state.profilePage} addPost = {props.addPost}/>} />
                     <Route path ='/News' component={News}/>
                 </div>
             </div>
