@@ -19,17 +19,18 @@ let state = {
         posts: [
             {id: 1, message: 'Hey', countLikes: 7},
             {id: 2, message: 'Cowabanga', countLikes: 21}
-        ]
+        ],
+        newPostText: ''
     }
 };
-
-export let addPost = (postMessage) => {
+export let addPost = () => {
     let newPost = {
         id: 5,
-        message: postMessage,
+        message: state.profilePage.newPostText ,
         countLikes: 0
     };
     state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = ''
     rerenderEntireTree(state)
 }
 export let addMessage = (postMessage) => {
@@ -40,5 +41,9 @@ export let addMessage = (postMessage) => {
     state.dialogPage.messages.push(newMessage)
     rerenderEntireTree(state)
 };
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText
+    rerenderEntireTree(state)
+}
 
 export default state;
